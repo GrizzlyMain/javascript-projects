@@ -28,7 +28,7 @@ teamSports.push(baseball,basketball,soccer);
 
 let golf = ['course','iron','par'];
 let swimming = ['pool', 'goggles','laps']
-let bowling = ['lan', 'bowling ball', 'pins'];
+let bowling = ['lane', 'bowling ball', 'pins'];
 
 let indSports = [];
 indSports = [];
