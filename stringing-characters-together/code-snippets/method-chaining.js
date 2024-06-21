@@ -1,11 +1,11 @@
-//String methods can be combined in a process called method chaining.
+let names = ["Lena", "James", "Julio"];
 
-let word = 'JavaScript';
+for (let i = 0; i < names.length; i++) {
+    console.log(names[i]);
+}
 
-console.log(word.toUpperCase());
-//Returns ``JAVASCRIPT``
-
-//What does ``word.slice(4).toUpperCase()`` return?
-
-
-//Experiment with other combinations (chains) of string methods.
+function printNames(names) {
+    for (let i = 0; i < names.length; i++) {
+        console.log(names[i]);
+    }
+}
