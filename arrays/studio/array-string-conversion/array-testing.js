@@ -9,7 +9,7 @@ strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check = strings([0][1][2][3]).includes(',');
+	let check = strings.includes(',');
 
 	let output = check
 
@@ -19,7 +19,6 @@ function reverseCommas() {
 	return output;
 }
 
-console.log(reverseCommas);
 
 //3)
 function semiDash() {
