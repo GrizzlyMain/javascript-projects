@@ -1,3 +1,5 @@
+
+
 function checkFuel(level) {
   if (level > 100000){
     return 'green';
@@ -6,6 +8,7 @@ function checkFuel(level) {
   } else {
     return 'red';
   }
+  
 }
 
 function holdStatus(arr){
@@ -21,8 +24,36 @@ function holdStatus(arr){
 let fuelLevel = 200000;
 let cargoHold = ['meal kits', 'space suits', 'first-aid kit', 'satellite', 'gold', 'water', 'AE-35 unit'];
 
+let shipLaunchMeter = function(a) {
+  if (checkFuel(a) === 'green') {
+     return a - 100001;
+  }
+  else if (checkFuel(a) === 'yellow') {
+     return a - 50001;
+  }
+  else {
+     return a;
+  }
+};
+
+let takeOffCheck = function([]){
+  let newThingsToMe = []
+  newThingsToMe = cargoHold.splice(3,2, 'tin can', 'lawn ornament');
+  return newThingsToMe;
+}
+  
+
+function irs(fuelLevel, cargoHold){
+  let lostFuel = shipLaunchMeter(fuelLevel);
+  let itemsStolen = takeOffCheck(cargoHold);
+  return `Raided ${lostFuel} kg of fuel from the tanks, and stole ${itemsStolen[0]} and ${itemsStolen[1]} from the cargo hold.`;
+}
+
+console.log(irs(fuelLevel, cargoHold));
+
 console.log("Fuel level: " + checkFuel(fuelLevel));
-console.log("Hold status: " + holdStatus(cargoHold));
+console.log("Hold status: " + holdStatus(cargoHold) );
+
 
 /* Steal some fuel from the shuttle:
  */
