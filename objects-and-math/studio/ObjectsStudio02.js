@@ -1,9 +1,27 @@
 // Code your orbitCircumference function here:
+let Matt = {
+  round: (num, decimals = 2) => {
+      let factor = 10 ** decimals;
+      return (Math.round(num * factor) / factor);
+  }
+};
+
+let orbitCircumference = radius => Matt.round(2 * Math.PI * radius, 0);
+  
+
+
+
 
 
 // Code your missionDuration function here:
 
+function missionDuration(orbitsCompleted, orbitRadius = 2000, orbitSpeed = 28000){
 
+  return Matt.round(orbitCircumference(orbitRadius) * orbitsCompleted / orbitSpeed);
+  
+}
+
+console.log(missionDuration(5));
 // Copy/paste your selectRandomEntry function here:
 
 
