@@ -21,12 +21,20 @@ function missionDuration(orbitsCompleted, orbitRadius = 2000, orbitSpeed = 28000
   
 }
 
-console.log(missionDuration(5));
-// Copy/paste your selectRandomEntry function here:
+console.log(`The mission will travel ${orbitCircumference(2000)*5}km around the planet, and it will take ${missionDuration(5)}hours to complete.`)
 
+// Copy/paste your selectRandomEntry function here:
+function selectRandomEntry(arr){
+  let index = Math.floor(Math.random()*arr.length);
+  return arr[index];
+}
 
 // Code your oxygenExpended function here:
+function oxygenExpended(candidateObject){
+  
+  
 
+}
 
 // Candidate data & crew array.
 let candidateA = {
