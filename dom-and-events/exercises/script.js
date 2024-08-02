@@ -19,7 +19,7 @@ function init () {
      missionAbort.addEventListener('click', event=>{
         window.confirm("Are you sure you want to abort the mission?")
         if (confirm) {
-            paragraph.innerHTML = "Mission aborted! Space shuttle returning home";
+            paragraph.innerHTML = "Mission aborted! Space shuttle returning home.";
         };
           
      });
